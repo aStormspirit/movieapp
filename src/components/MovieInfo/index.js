@@ -2,6 +2,7 @@ import React from 'react'
 import  PropTypes  from 'prop-types';
 // components
 import Thumb from '../Thumb'
+import Rate from '../Rate'
 //config
 import {IMAGE_BASE_URL, BACKDROP_SIZE, POSTER_SIZE} from '../../config'
 // Image
@@ -38,6 +39,10 @@ const MovieInfo = ({movie}) => {
                                  <p key={director.credit_id}>{director.name}</p>
                              ))}
                          </div>
+                     </div>
+                     <div>
+                         <p>Rate Movie</p>
+                         <Rate />
                      </div>
                  </Text>
             </Content>
